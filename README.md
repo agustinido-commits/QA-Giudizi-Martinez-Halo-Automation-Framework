@@ -1,5 +1,23 @@
 # QA-Giudizi-Martinez-Halo-Automation-Framework
-QA Automation Framework to Halo on saucedemo app
+
+QA Automation Framework for the SauceDemo application.
+
+## Prerequisites
+
+Make sure the following tools are installed:
+
+- **Node.js:** v22.14.0 (LTS recommended)
+- **npm:** v10.9.2
+- **Git:** To clone the repository
+- **Visual Studio Code:** Recommended code editor
+- **Chromium:** Installed through Playwright in the setup steps below
+
+Verify your Node.js and npm versions:
+
+```bash
+node --version
+npm --version
+```
 
 ## Getting Started
 
@@ -31,6 +49,14 @@ npm run report
 
 Open the generated report:
 
-```bash
+```powershell
 Invoke-Item .\reports\html\index.html
 ```
+
+## Tech Stack
+
+- TypeScript
+- Playwright
+- Cucumber / Gherkin
+- Page Object Model (POM)
+- HTML test reporting
