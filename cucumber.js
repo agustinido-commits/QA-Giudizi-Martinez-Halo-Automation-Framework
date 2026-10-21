@@ -1,3 +1,4 @@
+
 module.exports = {
   default: {
     paths: ["features/**/*.feature"],
@@ -6,10 +7,13 @@ module.exports = {
       "src/support/**/*.ts",
       "src/steps/**/*.ts"
     ],
-format: [
-  "progress",
-  "json:reports/cucumber-report.json"
-],
+    format: [
+      "progress",
+      "json:reports/cucumber-report.json"
+    ],
+    formatOptions: {
+      snippetInterface: "async-await"
+    },
     publishQuiet: true,
     timeout: 15000
   }

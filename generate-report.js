@@ -8,9 +8,9 @@
     module;
 
   if (typeof reporter.generate !== "function") {
-    console.error("No se encontró la función generate.");
-    console.error("Exportaciones disponibles:", Object.keys(module));
-    console.error("Exportaciones default:", Object.keys(module.default ?? {}));
+    console.error("Cannot found generate function.");
+    console.error("Available exports:", Object.keys(module));
+    console.error("Default exports:", Object.keys(module.default ?? {}));
     process.exitCode = 1;
     return;
   }
